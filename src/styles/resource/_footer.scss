@@ -1,0 +1,89 @@
+#footer {
+    font-size: $smallFont;
+    padding: 50px 0 0 30px;
+    border-top: 1px solid $primaryColor;
+    clear: both;
+    position: relative;
+    height: 200px;
+
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+        h5 {
+            font-size: $smallFont;
+        }
+    }
+    ul {
+        list-style-type: none;
+        
+        &#contact {
+           position: relative;
+           li {
+               margin-left: 15px; 
+               line-height: 28px !important; 
+               margin-top: 10px;
+
+            }
+            svg{
+                position: absolute;
+                left: -10px;
+                top: 9px;
+                border-color: $primaryColor;
+                font-size: 15px;
+                &#call {
+                    left: -10px;
+                    top:55%;
+                }
+                &#mail {
+                    left: -10px;
+                    top : 83%;
+                }
+            }
+        }
+        li {
+            width: 70%;
+            line-height: 33px !important;
+            font-size: $smallFont;
+            a {
+                text-decoration: none;
+                color:  $primaryColor;
+                &:hover {
+                    color: #4C4C4C;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    #bottom_footer {
+        margin-right: 60px;
+        margin-top: 5%;
+        border-top: 1px solid $primaryColor;
+        padding-top: 13px;
+        padding-bottom: 6px;
+        p {
+            line-height: 18px;
+        }
+    }
+    @include mobile {
+        padding: 50px 1rem 1rem;
+        .row div {
+            margin-bottom: 1rem;
+            ul {
+                &.list {
+                    li {
+                        display: inline;
+                        margin: 0 10px;
+                    }
+                }
+                li {
+                    width: 100%;
+                }
+            }
+        }
+        #bottom_footer {
+            padding: 6px;
+            margin-right: 0 !important;
+        }
+    }
+}

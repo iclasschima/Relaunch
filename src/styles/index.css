@@ -1,0 +1,424 @@
+#navbar {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+}
+
+#navbar .navbar-collapse {
+  font-size: 14px !important;
+}
+
+#navbar .navbar-collapse .nav-link {
+  font-weight: 500 !important;
+}
+
+#Banner {
+  background: url("../assets/virus.jpg") center no-repeat;
+  height: 30rem;
+  color: #fff;
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  #Banner {
+    height: 80vh;
+  }
+}
+
+#Banner span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #24323d;
+  opacity: 0.65;
+}
+
+#Banner #banner_text {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+#Banner #banner_text p {
+  font-size: 20px;
+}
+
+#Banner #banner_text button {
+  width: 15rem;
+  height: 4rem;
+  font-size: 20px;
+  color: #26404D;
+  border: 2px solid #26404D;
+  background-color: #fff;
+}
+
+#Banner #banner_text button:hover {
+  background-color: #26404D;
+  color: #fff;
+  border-color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  #Banner #banner_text {
+    top: 25%;
+    left: 5%;
+  }
+  #Banner #banner_text h1 {
+    font-size: 26px;
+  }
+  #Banner #banner_text p {
+    font-size: 16px;
+    padding-right: 5px;
+  }
+  #Banner #banner_text button {
+    margin-top: 20px;
+  }
+}
+
+#category {
+  padding: 6rem 5rem 10rem;
+}
+
+#category h4 {
+  margin-bottom: 60px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+#category h5 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+#category .col {
+  height: 340px;
+}
+
+#category .col div {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  font-size: 14px;
+  position: relative;
+}
+
+#category .col div img {
+  width: 60%;
+}
+
+#category .col div #savings {
+  width: 70% !important;
+}
+
+#category .col div h5 {
+  margin-top: 40px;
+}
+
+#category .col div button {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  top: 88%;
+  color: #26404D;
+  border-color: #26404D;
+  background-color: #fff;
+}
+
+#category .col div button:hover {
+  background-color: #26404D;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  #category {
+    padding: 3rem 1rem 2rem;
+  }
+  #category .col {
+    margin-bottom: 6rem;
+  }
+  #category .col div {
+    width: 80% !important;
+  }
+}
+
+#giving {
+  background-color: #26404D;
+  padding: 60px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#giving h4 {
+  font-size: 35px;
+}
+
+#giving button {
+  width: 15rem;
+  height: 4rem;
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  left: 30%;
+  color: #26404D;
+  border: 2px solid #26404D;
+  background-color: #fff;
+}
+
+#giving button:hover {
+  background-color: #26404D;
+  color: #fff;
+  border-color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  #giving button {
+    top: 30%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #giving {
+    padding: 8rem 3px;
+    height: 25rem;
+  }
+  #giving .row {
+    margin: 0;
+  }
+  #giving button {
+    left: 20%;
+    margin-top: 20px;
+  }
+  #giving h4 {
+    font-size: 20px !important;
+  }
+}
+
+#footer {
+  font-size: 14px;
+  padding: 50px 0 0 30px;
+  border-top: 1px solid #26404D;
+  clear: both;
+  position: relative;
+  height: 200px;
+}
+
+#footer .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#footer .row h5 {
+  font-size: 14px;
+}
+
+#footer ul {
+  list-style-type: none;
+}
+
+#footer ul#contact {
+  position: relative;
+}
+
+#footer ul#contact li {
+  margin-left: 15px;
+  line-height: 28px !important;
+  margin-top: 10px;
+}
+
+#footer ul#contact svg {
+  position: absolute;
+  left: -10px;
+  top: 9px;
+  border-color: #26404D;
+  font-size: 15px;
+}
+
+#footer ul#contact svg#call {
+  left: -10px;
+  top: 55%;
+}
+
+#footer ul#contact svg#mail {
+  left: -10px;
+  top: 83%;
+}
+
+#footer ul li {
+  width: 70%;
+  line-height: 33px !important;
+  font-size: 14px;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: #26404D;
+}
+
+#footer ul li a:hover {
+  color: #4C4C4C;
+  text-decoration: underline;
+}
+
+#footer #bottom_footer {
+  margin-right: 60px;
+  margin-top: 5%;
+  border-top: 1px solid #26404D;
+  padding-top: 13px;
+  padding-bottom: 6px;
+}
+
+#footer #bottom_footer p {
+  line-height: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  #footer {
+    padding: 50px 1rem 1rem;
+  }
+  #footer .row div {
+    margin-bottom: 1rem;
+  }
+  #footer .row div ul.list li {
+    display: inline;
+    margin: 0 10px;
+  }
+  #footer .row div ul li {
+    width: 100%;
+  }
+  #footer #bottom_footer {
+    padding: 6px;
+    margin-right: 0 !important;
+  }
+}
+
+#sponsors {
+  padding: 6rem 0 0;
+}
+
+#sponsors h5 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+#sponsors ul {
+  list-style-type: none;
+}
+
+#sponsors ul li {
+  display: inline;
+  margin: 0 8rem;
+}
+
+#sponsors ul li img {
+  width: 12%;
+}
+
+@media screen and (max-width: 480px) {
+  #sponsors ul {
+    padding-top: 10px;
+  }
+  #sponsors ul li {
+    display: block;
+    margin: 15px 0;
+  }
+  #sponsors ul li img {
+    width: 35%;
+  }
+  #sponsors ul li:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+#login {
+  padding: 4rem;
+  height: 50vh;
+}
+
+#login h5 {
+  margin-bottom: 25px;
+}
+
+#login form {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  #login {
+    padding: 4rem 2rem 26rem !important;
+  }
+}
+
+#how_it_works {
+  height: 100%;
+  padding: 4rem 5rem 0rem;
+}
+
+@media screen and (max-width: 480px) {
+  #how_it_works {
+    padding: 2rem 2rem 10rem;
+  }
+  #how_it_works .row .row {
+    padding: 10px 0rem;
+  }
+}
+
+#how_it_works h4 {
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+
+#how_it_works .hows {
+  margin-top: 5rem;
+}
+
+#how_it_works .hows h5 svg {
+  margin-right: 14px;
+  font-size: 25px;
+}
+
+#how_it_works .hows h5 svg#fund {
+  stroke: #26404D;
+  stroke-width: 30;
+  fill: #fff;
+  font-size: 30px;
+}
+
+#how_it_works .hows h5 svg#med {
+  stroke-width: 30;
+}
+
+#how_it_works .hows:first-child {
+  margin-top: 0;
+}
+
+#how_it_works .hows .row {
+  padding: 10px 1rem;
+}
+
+#how_it_works .hows .row span {
+  font-size: 50px;
+  color: #26404D;
+  float: left;
+  padding-right: 20px;
+}
+
+#how_it_works .hows .row p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#content_container {
+  min-height: 100% !important;
+  padding-bottom: 7%;
+}
+/*# sourceMappingURL=index.css.map */

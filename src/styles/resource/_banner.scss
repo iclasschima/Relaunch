@@ -1,0 +1,55 @@
+
+#Banner {
+    background: url("../assets/virus.jpg") center no-repeat;
+    height: 30rem;
+    color: #fff;
+    position: relative;
+    @include mobile {
+        height: 80vh;
+    };
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #24323d;
+        opacity: 0.65;
+    }
+    
+    #banner_text {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        p {
+            font-size: $headerFont;
+        }
+        button {
+            width: 15rem;
+            height: 4rem;
+            font-size: 20px;
+            color: #26404D;
+            border: 2px solid #26404D;
+            background-color: #fff;
+            &:hover {
+                background-color: #26404D;
+                color: #fff;
+                border-color: #fff;
+            } 
+        }
+        @include mobile {
+            top: 25%;
+            left: 5%;
+            h1 {
+                font-size: 26px;
+            }
+            p {
+                font-size: $mediumFont;
+                padding-right: 5px;
+            }
+            button {
+               margin-top: 20px;
+            }
+        };
+    }
+}

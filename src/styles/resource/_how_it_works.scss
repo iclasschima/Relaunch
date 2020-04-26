@@ -1,0 +1,50 @@
+#how_it_works {
+    height: 100%;
+    padding: 4rem 5rem 0rem;
+    @include mobile {
+        padding: 2rem 2rem 10rem;
+        .row .row {
+            padding: 10px 0rem;
+        }
+    }
+    h4 {
+        text-transform: capitalize;
+        margin-bottom: 3rem;
+    }
+
+    .hows{
+        h5 {
+            svg {
+                margin-right: 14px;
+                font-size: 25px;
+                &#fund {
+                    stroke: $primaryColor;
+                    stroke-width: 30;
+                    fill: #fff;
+                    font-size: 30px;
+                }
+                &#med {
+                    stroke-width: 30;
+                }
+            }
+        }
+        margin-top: 5rem;
+        &:first-child {
+            margin-top: 0;
+        }
+        .row {
+            padding: 10px 1rem;
+    
+            span {
+                font-size: 50px;
+                color: $primaryColor;
+                float: left;
+                padding-right: 20px;
+            }
+            p {
+                font-size: $smallFont;
+                padding-top: 10px;
+            }
+        }
+    } 
+}

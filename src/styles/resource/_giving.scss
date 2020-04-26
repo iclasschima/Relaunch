@@ -1,0 +1,46 @@
+#giving {
+    background-color: $primaryColor;
+    padding: 60px;
+    color: #fff;
+    text-transform: capitalize;
+
+    h4 {
+        font-size: 35px;
+    }
+
+    button {
+        width: 15rem;
+        height: 4rem;
+        position: absolute;
+        bottom: 0;
+        font-size: 20px;
+        left: 30%;
+        color: #26404D;
+        border: 2px solid #26404D;
+        background-color: #fff;
+        &:hover {
+            background-color: #26404D;
+            color: #fff;
+            border-color: #fff;
+        }
+        @include mobile {
+            top: 30%;
+            left: 10%;
+        } 
+    }
+
+    @include mobile {
+       padding: 8rem 3px;
+       height: 25rem;
+       .row {
+           margin: 0;
+       }
+        button {
+            left: 20%;
+            margin-top: 20px;
+        }
+        h4 {
+            font-size: $headerFont !important;
+        }
+    }
+}

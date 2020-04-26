@@ -1,0 +1,22 @@
+@import "./resource/variables";
+@import "./resource/mixins";
+@import "./resource/navbar";
+@import "./resource/banner";
+@import "./resource/category";
+@import "./resource/giving";
+@import "./resource/footer";
+@import "./resource/sponsors";
+@import "./resource/login";
+@import "./resource/how_it_works";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#content_container {
+    min-height: 100% !important;
+    padding-bottom: 7%;
+}
+

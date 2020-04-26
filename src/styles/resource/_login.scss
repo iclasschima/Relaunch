@@ -1,0 +1,13 @@
+#login {
+    padding: 4rem;
+    height: 50vh;
+    h5 {
+        margin-bottom: 25px;
+    }
+    form {
+        font-size: $smallFont;
+    }
+    @include mobile {
+        padding: 4rem 2rem 26rem !important;
+    }
+}
