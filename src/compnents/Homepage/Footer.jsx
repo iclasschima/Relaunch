@@ -37,7 +37,7 @@ export default () => (
             
         </Row>
         <div id="bottom_footer">
-            <p>Copyright &copy; {new Date().getFullYear()} StaySafeNG. All rights reserved.</p>
+            <p>Copyright &copy; {new Date().getFullYear()} ReLaunch. All rights reserved.</p>
         </div>
     </Container>
 )
