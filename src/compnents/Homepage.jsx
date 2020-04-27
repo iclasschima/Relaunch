@@ -7,6 +7,7 @@ import Getstarted from "./Homepage/Giving"
 import Sponsors from "./Homepage/Sponsors"
 import HowItWorks from "./Homepage/HowItWorks"
 import Login from "./Homepage/Login"
+import About from "./Homepage/About"
 import Footer from "./Homepage/Footer"
 
 export default () => (
@@ -18,6 +19,7 @@ export default () => (
                 <Route path="/" component={Category} exact/>
                 <Route path="/" component={Getstarted} exact/>
                 <Route path="/" component={Sponsors} exact/>
+                <Route path="/about" component={About} exact/>
                 <Route path="/login" component={Login} exact/>
                 <Route path="/howitworks" component={HowItWorks}/>
             </div>   

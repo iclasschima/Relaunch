@@ -7,6 +7,7 @@
 @import "./resource/footer";
 @import "./resource/sponsors";
 @import "./resource/login";
+@import "./resource/about";
 @import "./resource/how_it_works";
 
 * {
@@ -16,7 +17,7 @@
 }
 
 #content_container {
-    min-height: 100% !important;
+    min-height: 70vh !important;
     padding-bottom: 7%;
 }
 

@@ -7,7 +7,7 @@ export default () => (
         <Row sm="2" md="4" xs="1">
             <Col>
                 <h5>RELAUNCH</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusantium harum sequi, molestias voluptatem.</p>
+                <p>Born in the midst of a global pandemic; we believe we have a part to play in this moment of uncertainty. </p>
             </Col>
             <Col>
                 <h5>CONTACT US</h5>

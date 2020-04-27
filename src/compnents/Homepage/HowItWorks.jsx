@@ -20,7 +20,7 @@ export default () => (
                     </Col>
                     <Col>
                         <span>03</span>
-                        <p>Click on the <b>pay</b> button!</p>
+                        <p>Click on the <b>pay</b> button. Thank you!</p>
                     </Col>
                 </Row>
             </Col>

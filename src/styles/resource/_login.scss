@@ -1,13 +1,37 @@
 #login {
     padding: 4rem;
-    height: 50vh;
+    height: 100%;
     h5 {
         margin-bottom: 25px;
     }
     form {
         font-size: $smallFont;
+        a {
+            font-size: $smallFont;
+            float: right;
+        }
+        input {
+            font-size: $smallFont;
+        }
+
+        button {
+            margin-top: 5%;
+            color: #26404D;
+            font-size: $smallFont;
+            border-color: #26404D;
+            background-color: #fff;
+            &:hover {
+                background-color: #26404D;
+                color: #fff;
+            }
+        }
+    }
+
+    #signup_div {
+        margin-top: 1rem;
+        font-size: $smallFont;
     }
     @include mobile {
-        padding: 4rem 2rem 26rem !important;
+        padding: 4rem 2rem 4rem !important;
     }
 }
