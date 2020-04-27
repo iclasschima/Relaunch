@@ -14,7 +14,7 @@ export default () => (
                 <ul id="contact">
                     <li><FiMapPin /> 312 Herbert Macualay way, Sabo Yaba, Lagos, Nigeria.</li>
                     <li><FiPhoneCall id="call"/> 0903 186 1100, 0708 890 5933</li>
-                    <li><FiMail id="mail"/> info@staysafeng.com</li>
+                    <li><FiMail id="mail"/> info@relaunch.com</li>
                 </ul>
             </Col>
             <Col>
