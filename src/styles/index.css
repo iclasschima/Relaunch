@@ -143,6 +143,15 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  #category {
+    padding: 3rem 2rem 8rem;
+  }
+  #category .col div {
+    width: 90% !important;
+  }
+}
+
 #giving {
   background-color: #26404D;
   padding: 60px;
@@ -188,11 +197,24 @@
     margin: 0;
   }
   #giving button {
-    left: 20%;
-    margin-top: 20px;
+    left: 10% !important;
+    margin-top: 30px;
   }
   #giving h4 {
     font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #giving {
+    padding: 4rem 4rem 4rem 2rem !important;
+  }
+  #giving h4 {
+    font-size: 20px;
+  }
+  #giving button {
+    left: 13%;
+    top: 5%;
   }
 }
 
@@ -218,17 +240,18 @@
   list-style-type: none;
 }
 
-#footer ul#contact {
+#footer ul#contact_list {
   position: relative;
 }
 
-#footer ul#contact li {
+#footer ul#contact_list li {
   margin-left: 15px;
   line-height: 28px !important;
   margin-top: 10px;
+  width: 90%;
 }
 
-#footer ul#contact svg {
+#footer ul#contact_list svg {
   position: absolute;
   left: -10px;
   top: 9px;
@@ -236,12 +259,12 @@
   font-size: 15px;
 }
 
-#footer ul#contact svg#call {
+#footer ul#contact_list svg#call {
   left: -10px;
   top: 55%;
 }
 
-#footer ul#contact svg#mail {
+#footer ul#contact_list svg#mail {
   left: -10px;
   top: 83%;
 }
@@ -313,6 +336,12 @@
   margin: 0 8rem;
 }
 
+@media screen and (max-width: 768px) {
+  #sponsors ul li {
+    margin: 0 4rem;
+  }
+}
+
 #sponsors ul li img {
   width: 12%;
 }
@@ -379,6 +408,43 @@
   }
 }
 
+#contact {
+  padding: 4rem;
+}
+
+#contact .row {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+#contact .row input {
+  font-size: 14px;
+}
+
+#contact .row textarea {
+  font-size: 14px;
+}
+
+#contact .row button {
+  position: relative;
+  margin-top: 5%;
+  color: #26404D;
+  font-size: 14px;
+  border-color: #26404D;
+  background-color: #fff;
+}
+
+#contact .row button:hover {
+  background-color: #26404D;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  #contact {
+    padding: 2rem;
+  }
+}
+
 #about {
   padding: 0rem 4rem 4rem;
 }
@@ -416,18 +482,37 @@
   }
 }
 
-#how_it_works {
-  height: 100%;
-  padding: 4rem 5rem 0rem;
+#faq {
+  padding: 3rem 4rem 4rem;
+}
+
+#faq .accordion {
+  font-size: 16px !important;
+}
+
+#faq .accordion .card .card-header {
+  cursor: pointer;
+}
+
+#faq .accordion .card .card-header span {
+  font-size: 20px;
+  margin-right: 7px;
+}
+
+#faq .accordion .card .card-body {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 @media screen and (max-width: 480px) {
-  #how_it_works {
-    padding: 2rem 2rem 10rem;
+  #faq {
+    padding: 3rem 1.5rem 4rem;
   }
-  #how_it_works .row .row {
-    padding: 10px 0rem;
-  }
+}
+
+#how_it_works {
+  height: 100%;
+  padding: 4rem 5rem 0rem;
 }
 
 #how_it_works h4 {
@@ -437,6 +522,10 @@
 
 #how_it_works .hows {
   margin-top: 5rem;
+}
+
+#how_it_works .hows h5 {
+  line-height: 30px;
 }
 
 #how_it_works .hows h5 svg {
@@ -473,6 +562,40 @@
 #how_it_works .hows .row p {
   font-size: 14px;
   padding-top: 10px;
+}
+
+#how_it_works #faq_link {
+  margin-top: 5rem;
+  line-height: 32px;
+}
+
+#how_it_works #faq_link svg {
+  margin-right: 5px;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 480px) {
+  #how_it_works {
+    padding: 2rem 2rem 10rem;
+  }
+  #how_it_works .row .row {
+    padding: 10px 0rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #how_it_works {
+    padding: 2rem 3rem 1rem;
+  }
+  #how_it_works .row .row {
+    padding: 5px 0;
+  }
+  #how_it_works .col-9 {
+    padding-right: 18px !important;
+  }
+  #how_it_works span {
+    font-size: 40px !important;
+  }
 }
 
 * {

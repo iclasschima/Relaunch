@@ -8,6 +8,8 @@ import Sponsors from "./Homepage/Sponsors"
 import HowItWorks from "./Homepage/HowItWorks"
 import Login from "./Homepage/Login"
 import About from "./Homepage/About"
+import FAQ from "./Homepage/Faq"
+import Contact from "./Homepage/Contact"
 import Footer from "./Homepage/Footer"
 
 export default () => (
@@ -20,7 +22,9 @@ export default () => (
                 <Route path="/" component={Getstarted} exact/>
                 <Route path="/" component={Sponsors} exact/>
                 <Route path="/about" component={About} exact/>
+                <Route path="/contact" component={Contact} exact/>
                 <Route path="/login" component={Login} exact/>
+                <Route path="/faqs" component={FAQ} exact/>
                 <Route path="/howitworks" component={HowItWorks}/>
             </div>   
         </Switch>

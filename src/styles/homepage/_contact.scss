@@ -1,0 +1,29 @@
+#contact {
+    padding: 4rem;
+    .row {
+        font-size: $smallFont;
+        margin-top: 25px;
+        input {
+            font-size: $smallFont;
+        }
+        textarea {
+            font-size: $smallFont;
+        }
+        button {
+            position: relative;
+            margin-top: 5%;
+            color: #26404D;
+            font-size: $smallFont;
+            border-color: #26404D;
+            background-color: #fff;
+            &:hover {
+                background-color: #26404D;
+                color: #fff;
+               
+            }
+        }
+    }
+    @include mobile {
+        padding: 2rem;
+    }
+}

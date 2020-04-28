@@ -9,9 +9,3 @@
         @content
     }
 };
-
-@mixin iPadPro {
-    @media screen and (max-width: 1024px) {
-        @content
-    }
-}

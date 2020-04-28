@@ -12,6 +12,7 @@ export default () => {
                 <Nav className="ml-auto">
                     <Nav.Link href="/" className="px-md-4"> Home </Nav.Link>
                     <Nav.Link href="/about" className="px-md-4"> About Us </Nav.Link>
+                    <Nav.Link href="/contact" className="px-md-4"> Contact Us </Nav.Link>
                     <Nav.Link href="/about" className="px-md-4"> Donate </Nav.Link>
                     <Nav.Link href="/howitworks" className="px-md-4"> How It Works </Nav.Link>
                     <Nav.Link href="/login" className="px-md-4 text-primary"> Get Started</Nav.Link>

@@ -1,14 +1,16 @@
-@import "./resource/variables";
-@import "./resource/mixins";
-@import "./resource/navbar";
-@import "./resource/banner";
-@import "./resource/category";
-@import "./resource/giving";
-@import "./resource/footer";
-@import "./resource/sponsors";
-@import "./resource/login";
-@import "./resource/about";
-@import "./resource/how_it_works";
+@import "./homepage/variables";
+@import "./homepage/mixins";
+@import "./homepage/navbar";
+@import "./homepage/banner";
+@import "./homepage/category";
+@import "./homepage/giving";
+@import "./homepage/footer";
+@import "./homepage/sponsors";
+@import "./homepage/login";
+@import "./homepage/contact";
+@import "./homepage/about";
+@import "./homepage/faq";
+@import "./homepage/how_it_works";
 
 * {
     margin: 0;

@@ -17,13 +17,13 @@
     ul {
         list-style-type: none;
         
-        &#contact {
+        &#contact_list {
            position: relative;
            li {
                margin-left: 15px; 
                line-height: 28px !important; 
                margin-top: 10px;
-
+               width: 90%;
             }
             svg{
                 position: absolute;

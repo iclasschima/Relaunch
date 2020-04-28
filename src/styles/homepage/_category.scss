@@ -55,4 +55,13 @@
             }
         }
     }
+
+    @include iPad {
+        padding: 3rem 2rem 8rem;
+        .col {
+            div {
+                width: 90% !important;
+            }
+        }
+    }
 }

@@ -1,0 +1,24 @@
+#faq {
+    padding: 3rem 4rem 4rem;
+   .accordion {
+        font-size: $mediumFont !important;
+         .card {
+            .card-header {
+                cursor: pointer;
+                
+                span {
+                    font-size: 20px;
+                    margin-right: 7px;
+                }
+            }
+            .card-body {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+   }
+   @include mobile {
+        padding: 3rem 1.5rem 4rem;
+   }
+    
+}
