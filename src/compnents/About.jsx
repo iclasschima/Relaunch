@@ -2,8 +2,13 @@ import React from "react"
 import {GiPalmTree, GiScales} from "react-icons/gi"
 import {FiHeart, FiAnchor, FiAward, FiCheck} from "react-icons/fi"
 import {Container, Row, Col} from "react-bootstrap"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 export default () => (
+    <React.Fragment>
+        <Navbar />
+
     <Container fluid id="about">
         <Row xs={1}>
             <Col>
@@ -17,12 +22,12 @@ export default () => (
                     our communities, our states and Nation through a radical innovative journey map guided by a design thinking compass.</p>
             </Col>
             <Col>
-                <h5>Then Comes Our Vision</h5>
+                <h5>Our Vision</h5>
                 <p>Our vision is to create a responsive ecosystem that will respond to our present challenges and realities, 
                     help entities crippled by this unprecedented realities find their path back to growth and Sustainability through an innovative driven approach.</p>
             </Col>
             <Col>
-                <h5>Our Core Values</h5>
+                <h5> Core Values</h5>
                 <Row md={3} xs={1} id="core"> 
                     <Col>
                         <h6><GiPalmTree /> Growth</h6>
@@ -55,4 +60,6 @@ export default () => (
                 
         </Row>
     </Container>
+    <Footer />
+    </React.Fragment>
 )

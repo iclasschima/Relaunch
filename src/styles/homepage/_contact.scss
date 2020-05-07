@@ -9,18 +9,17 @@
         textarea {
             font-size: $smallFont;
         }
+        label {
+            svg {
+                margin-right: 0.1rem;
+            }
+        }
         button {
             position: relative;
             margin-top: 5%;
-            color: #26404D;
+            color: #fff;
             font-size: $smallFont;
-            border-color: #26404D;
-            background-color: #fff;
-            &:hover {
-                background-color: #26404D;
-                color: #fff;
-               
-            }
+            background-color: $primaryColor;
         }
     }
     @include mobile {

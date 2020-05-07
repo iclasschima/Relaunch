@@ -10,16 +10,29 @@
 @import "./homepage/contact";
 @import "./homepage/about";
 @import "./homepage/faq";
+@import "./homepage/bvn";
+@import "./homepage/signup";
 @import "./homepage/how_it_works";
+
+@import "./dashboard/sidenav";
+@import "./dashboard/body";
+@import "./dashboard/content";
+@import "./dashboard/settings";
+@import "./dashboard/topnav";
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.2px;
 }
 
-#content_container {
-    min-height: 70vh !important;
-    padding-bottom: 7%;
+.form-control {
+    &:focus {
+        box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.18) !important;
+    }
 }
 
+h5 {
+    font-weight: 600 !important;
+}

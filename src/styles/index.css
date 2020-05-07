@@ -45,7 +45,8 @@
   font-size: 20px;
 }
 
-#Banner #banner_text button {
+#Banner #banner_text a {
+  padding: 0.9rem;
   width: 15rem;
   height: 4rem;
   font-size: 20px;
@@ -54,7 +55,7 @@
   background-color: #fff;
 }
 
-#Banner #banner_text button:hover {
+#Banner #banner_text a:hover {
   background-color: #26404D;
   color: #fff;
   border-color: #fff;
@@ -85,11 +86,7 @@
   margin-bottom: 60px;
   font-size: 20px;
   text-transform: capitalize;
-}
-
-#category h5 {
-  font-size: 16px;
-  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 #category .col {
@@ -112,8 +109,11 @@
   width: 70% !important;
 }
 
-#category .col div h5 {
+#category .col div h6 {
   margin-top: 40px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 #category .col div button {
@@ -121,19 +121,13 @@
   left: 10%;
   width: 80%;
   top: 88%;
-  color: #26404D;
-  border-color: #26404D;
-  background-color: #fff;
-}
-
-#category .col div button:hover {
-  background-color: #26404D;
   color: #fff;
+  background-color: #26404D;
 }
 
 @media screen and (max-width: 480px) {
   #category {
-    padding: 3rem 1rem 2rem;
+    padding: 3rem 1rem 1rem !important;
   }
   #category .col {
     margin-bottom: 6rem;
@@ -163,7 +157,8 @@
   font-size: 35px;
 }
 
-#giving button {
+#giving a {
+  padding-top: 0.9rem;
   width: 15rem;
   height: 4rem;
   position: absolute;
@@ -175,14 +170,14 @@
   background-color: #fff;
 }
 
-#giving button:hover {
+#giving a:hover {
   background-color: #26404D;
   color: #fff;
   border-color: #fff;
 }
 
 @media screen and (max-width: 480px) {
-  #giving button {
+  #giving a {
     top: 30%;
     left: 10%;
   }
@@ -212,7 +207,7 @@
   #giving h4 {
     font-size: 20px;
   }
-  #giving button {
+  #giving a {
     left: 13%;
     top: 5%;
   }
@@ -225,6 +220,7 @@
   clear: both;
   position: relative;
   height: 200px;
+  margin-top: 4rem;
 }
 
 #footer .row {
@@ -247,26 +243,26 @@
 #footer ul#contact_list li {
   margin-left: 15px;
   line-height: 28px !important;
-  margin-top: 10px;
+  margin-top: 15px;
   width: 90%;
 }
 
 #footer ul#contact_list svg {
   position: absolute;
   left: -10px;
-  top: 9px;
+  top: 10px;
   border-color: #26404D;
   font-size: 15px;
 }
 
 #footer ul#contact_list svg#call {
   left: -10px;
-  top: 55%;
+  top: 48%;
 }
 
 #footer ul#contact_list svg#mail {
   left: -10px;
-  top: 83%;
+  top: 88%;
 }
 
 #footer ul li {
@@ -314,6 +310,15 @@
   #footer #bottom_footer {
     padding: 6px;
     margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #footer svg#call {
+    top: 55% !important;
+  }
+  #footer svg#mail {
+    top: 92% !important;
   }
 }
 
@@ -368,7 +373,7 @@
 }
 
 #login h5 {
-  margin-bottom: 25px;
+  margin-bottom: 2rem;
 }
 
 #login form {
@@ -384,12 +389,32 @@
   font-size: 14px;
 }
 
+#login form label.form-label {
+  padding-left: 1px;
+  line-height: 35px;
+}
+
+#login form label.form-label svg {
+  margin-right: 0.1rem;
+  position: relative !important;
+}
+
+#login form #password_div {
+  position: relative;
+}
+
+#login form #password_div svg {
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  cursor: pointer;
+}
+
 #login form button {
   margin-top: 5%;
-  color: #26404D;
+  color: #fff;
   font-size: 14px;
-  border-color: #26404D;
-  background-color: #fff;
+  background-color: #26404D;
 }
 
 #login form button:hover {
@@ -404,7 +429,7 @@
 
 @media screen and (max-width: 480px) {
   #login {
-    padding: 4rem 2rem 4rem !important;
+    padding: 4rem 2rem 4rem;
   }
 }
 
@@ -425,18 +450,16 @@
   font-size: 14px;
 }
 
+#contact .row label svg {
+  margin-right: 0.1rem;
+}
+
 #contact .row button {
   position: relative;
   margin-top: 5%;
-  color: #26404D;
-  font-size: 14px;
-  border-color: #26404D;
-  background-color: #fff;
-}
-
-#contact .row button:hover {
-  background-color: #26404D;
   color: #fff;
+  font-size: 14px;
+  background-color: #26404D;
 }
 
 @media screen and (max-width: 480px) {
@@ -507,6 +530,107 @@
 @media screen and (max-width: 480px) {
   #faq {
     padding: 3rem 1.5rem 4rem;
+  }
+}
+
+#bvn {
+  padding: 4rem;
+}
+
+#bvn h5 {
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+
+#bvn button {
+  margin-top: 5%;
+  color: #fff;
+  font-size: 14px;
+  background-color: #26404D;
+  border: 0 !important;
+}
+
+@media screen and (max-width: 480px) {
+  #bvn {
+    padding: 4rem 2rem 10rem;
+  }
+}
+
+#signup {
+  padding: 4rem;
+  height: 100%;
+}
+
+#signup h5 {
+  margin-bottom: 25px;
+}
+
+#signup form {
+  font-size: 14px;
+}
+
+#signup form a {
+  font-size: 14px;
+  float: right;
+}
+
+#signup form input {
+  font-size: 14px;
+}
+
+#signup form label.form-label {
+  padding-left: 1px;
+  line-height: 35px;
+}
+
+#signup form label.form-label svg {
+  margin-right: 0.1rem;
+  position: relative !important;
+}
+
+#signup form #password_div {
+  position: relative;
+}
+
+#signup form #password_div svg {
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  cursor: pointer;
+}
+
+#signup form #confirm_password_div {
+  position: relative;
+}
+
+#signup form #confirm_password_div svg {
+  position: absolute;
+  top: 54%;
+  right: 5%;
+  cursor: pointer;
+}
+
+#signup form button {
+  margin-top: 5%;
+  color: #26404D;
+  color: #fff;
+  font-size: 14px;
+  background-color: #26404D;
+}
+
+#signup form button:hover {
+  background-color: #26404D;
+  color: #fff;
+}
+
+#signup #signup_div {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  #signup {
+    padding: 4rem 2rem 4rem !important;
   }
 }
 
@@ -598,14 +722,273 @@
   }
 }
 
+#sidenav {
+  position: fixed;
+  height: 100vh;
+  margin-left: -200px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+  background-color: #fff;
+  -webkit-transition: ease-in .3s;
+  transition: ease-in .3s;
+  z-index: 2000;
+}
+
+#sidenav.show {
+  margin-left: 0;
+  width: 70%;
+}
+
+#sidenav h5 {
+  line-height: 3.5rem;
+  text-align: center;
+  -webkit-box-shadow: #0000002e 0px 1px 0px;
+          box-shadow: #0000002e 0px 1px 0px;
+  margin-bottom: 0;
+}
+
+#sidenav ul {
+  list-style-type: none;
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+#sidenav ul li {
+  line-height: 2.3rem;
+  padding: 0.3rem;
+  padding-left: 1.5rem;
+}
+
+#sidenav ul li a {
+  color: #6E6E6E;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+}
+
+#sidenav ul li:hover, #sidenav ul li.active {
+  background-color: #F4F4F4;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#sidenav ul li.active {
+  border-left: 4px solid red;
+}
+
+#sidenav ul li.active a {
+  color: red;
+}
+
+#sidenav ul li svg {
+  margin-right: 1em;
+  font-size: 1.2rem;
+}
+
+#body {
+  margin: 0;
+  width: 100%;
+  padding: 0.1rem;
+  min-height: 100vh;
+  background-color: #eeeeee79;
+}
+
+#body.fixed {
+  position: fixed;
+}
+
+#dashboard_content {
+  padding: 0;
+  padding-top: 6rem;
+}
+
+#dashboard_content .row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+#dashboard_content > .row {
+  margin-bottom: 4rem;
+}
+
+#dashboard_content h5 {
+  font-size: 16px;
+}
+
+#dashboard_content #top_dashboard {
+  border-radius: 0.5rem;
+}
+
+#dashboard_content #top_dashboard .col {
+  margin-bottom: 1rem;
+}
+
+#dashboard_content #top_dashboard a {
+  display: block;
+  position: relative;
+  padding: 0.8rem 1rem;
+  background-color: #fff;
+  color: #26404D;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+}
+
+#dashboard_content #top_dashboard a svg {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 2rem;
+  bottom: 1rem;
+}
+
+#dashboard_content #top_dashboard a span {
+  font-size: 14px;
+}
+
+#dashboard_content #top_dashboard a h1 {
+  font-size: 2rem;
+}
+
+#dashboard_content #top_dashboard a:hover {
+  text-decoration: none;
+}
+
+#dashboard_content #top_dashboard #total {
+  border-left: 0.4rem solid #3a86ff;
+}
+
+#dashboard_content #top_dashboard #total svg {
+  color: #3a86ff;
+}
+
+#dashboard_content #top_dashboard #delivered {
+  border-left: 0.4rem solid #00a896;
+}
+
+#dashboard_content #top_dashboard #delivered svg {
+  color: #00a896;
+}
+
+#dashboard_content #top_dashboard #pending {
+  border-left: 0.4rem solid #ffbe0b;
+}
+
+#dashboard_content #top_dashboard #pending svg {
+  color: #ffbe0b;
+}
+
+#dashboard_content #vendors {
+  height: 20rem;
+  padding-top: 1.5rem;
+}
+
+#dashboard_content #vendors ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+#dashboard_content #vendors ul li {
+  line-height: 2.5rem;
+}
+
+#dashboard_content #vendors ul li a {
+  display: block;
+  text-decoration: none;
+  color: #6d6875;
+}
+
+#settings #account, #settings #contact, #settings #password {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+  color: #26404D;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+}
+
+#settings #account span, #settings #contact span, #settings #password span {
+  font-size: 0.8rem;
+}
+
+#settings #account h5, #settings #contact h5, #settings #password h5 {
+  font-weight: 600;
+}
+
+#settings #account form, #settings #contact form, #settings #password form {
+  margin-top: 1.7rem;
+  font-size: 14px;
+}
+
+#settings #account form input, #settings #contact form input, #settings #password form input {
+  font-size: 14px;
+}
+
+#settings #account form button, #settings #contact form button, #settings #password form button {
+  margin-top: 1.5rem;
+  color: #fff;
+  font-size: 14px;
+  background-color: #26404D;
+  border: 0 !important;
+}
+
+#settings #password .password_div {
+  position: relative;
+}
+
+#settings #password .password_div span {
+  position: absolute;
+  top: 60%;
+  right: 6%;
+  cursor: pointer;
+}
+
+#topnav {
+  background-color: #26404D;
+  padding: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+}
+
+#topnav #nav_div {
+  width: 80rem;
+  padding: 0;
+  height: 100%;
+  margin: 0 !important;
+}
+
+#topnav #nav_div #toggler {
+  padding: 1rem;
+  height: 4rem;
+}
+
+#topnav #nav_div #toggler p {
+  color: #fff !important;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#topnav #nav_div #toggler p svg {
+  position: absolute;
+  left: 2%;
+  font-size: 26px;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 0.2px;
 }
 
-#content_container {
-  min-height: 70vh !important;
-  padding-bottom: 7%;
+.form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.18) !important;
+          box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.18) !important;
+}
+
+h5 {
+  font-weight: 600 !important;
 }
 /*# sourceMappingURL=index.css.map */

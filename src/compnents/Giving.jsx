@@ -1,5 +1,5 @@
 import React from "react"
-import {Container, Row, Col, Button} from "react-bootstrap"
+import {Container, Row, Col} from "react-bootstrap"
 
 export default () => (
     <Container fluid id="giving">
@@ -9,7 +9,7 @@ export default () => (
                 <p>"Give, but give until it hurts." ― <i>Mother Teresa</i> </p>
             </Col>
             <Col>
-                <Button>Give Today</Button>
+                <a href="/" className="btn">Give Today</a>
             </Col>
         </Row>
        

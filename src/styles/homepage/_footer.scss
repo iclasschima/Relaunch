@@ -5,7 +5,7 @@
     clear: both;
     position: relative;
     height: 200px;
-
+    margin-top: 4rem;
 
     .row {
         margin-left: 0;
@@ -22,22 +22,22 @@
            li {
                margin-left: 15px; 
                line-height: 28px !important; 
-               margin-top: 10px;
+               margin-top: 15px;
                width: 90%;
             }
             svg{
                 position: absolute;
                 left: -10px;
-                top: 9px;
+                top: 10px;
                 border-color: $primaryColor;
                 font-size: 15px;
                 &#call {
                     left: -10px;
-                    top:55%;
+                    top: 48%;
                 }
                 &#mail {
                     left: -10px;
-                    top : 83%;
+                    top : 88%;
                 }
             }
         }
@@ -84,6 +84,17 @@
         #bottom_footer {
             padding: 6px;
             margin-right: 0 !important;
+        }
+    }
+
+    @include iPad {
+        svg {
+            &#call {
+                top: 55% !important;
+            }
+            &#mail {
+                top : 92% !important;
+            }
         }
     }
 }

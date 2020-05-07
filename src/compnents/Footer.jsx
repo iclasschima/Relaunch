@@ -13,7 +13,7 @@ export default () => (
                 <h5>CONTACT US</h5>
                 <ul id="contact_list">
                     <li><FiMapPin /> 312 Herbert Macualay way, Sabo Yaba, Lagos, Nigeria.</li>
-                    <li><FiPhoneCall id="call"/> 0903 186 1100, 0708 890 5933</li>
+                    <li><FiPhoneCall id="call"/> 0903 186 1100, 0708 890 5933, 0706 617 6828</li>
                     <li><FiMail id="mail"/> info@relaunch.com</li>
                 </ul>
             </Col>
@@ -21,6 +21,7 @@ export default () => (
                 <h5>QUICK LINKS</h5>
                 <ul className="list">
                     <li><a href="/"> Donate </a></li>
+                    <li><a href="/login"> Login </a></li>
                     <li><a href="/howitworks"> How It Works </a></li>
                     <li><a href="/faqs"> FAQs </a></li>
                 </ul>

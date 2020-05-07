@@ -1,7 +1,7 @@
 import React from "react"
-import paystack from "../../assets/paystack.png"
-import hotels from "../../assets/hotels.png"
-import semicolon from "../../assets/semicolon.png"
+import paystack from "../assets/paystack.png"
+import hotels from "../assets/hotels.png"
+import semicolon from "../assets/semicolon.png"
 import {Container} from "react-bootstrap"
 
 export default () => (

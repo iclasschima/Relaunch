@@ -1,0 +1,19 @@
+#bvn {
+    padding: 4rem;
+    h5 {
+        margin-bottom: 25px;
+        line-height: 30px;
+    }
+
+    button {
+        margin-top: 5%;
+        color: #fff;
+        font-size: $smallFont;
+        background-color: $primaryColor;
+        border: 0 !important;
+    }
+
+    @include mobile {
+        padding: 4rem 2rem 10rem;
+    }
+}

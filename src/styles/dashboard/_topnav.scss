@@ -1,0 +1,30 @@
+#topnav {
+    background-color: $primaryColor;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+
+    #nav_div {
+        width: 80rem;
+        padding: 0;
+        height: 100%;
+        margin: 0 !important;
+        #toggler {
+            padding: 1rem;
+            height: 4rem;
+            p {
+                color: #fff !important;
+                text-align: center;
+                position: relative;
+                font-size: 18px;
+                line-height: 30px;
+                svg {
+                    position: absolute;
+                    left: 2%;
+                    font-size: 26px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}   

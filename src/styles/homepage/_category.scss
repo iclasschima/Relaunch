@@ -5,11 +5,7 @@
         margin-bottom: 60px;
         font-size: $headerFont;
         text-transform: capitalize;
-    }
-
-    h5 {
-        font-size: $mediumFont;
-        margin-bottom: 15px;
+        font-weight: 600;
     }
 
     .col {
@@ -28,26 +24,25 @@
                 width: 70% !important;
             }
 
-            h5 {
+            h6 {
                 margin-top: 40px;
+                font-size: $mediumFont;
+                margin-bottom: 15px;
+                font-weight: 600    ;
             }
+
             button {
                 position: absolute;
                 left: 10%;
                 width: 80%;
                 top: 88%;
-                color: #26404D;
-                border-color: #26404D;
-                background-color: #fff;
-                &:hover {
-                    background-color: #26404D;
-                    color: #fff;
-                }
+                color: #fff;
+                background-color: $primaryColor;
             }
         }
     }
     @include mobile {
-        padding: 3rem 1rem 2rem;
+        padding: 3rem 1rem 1rem !important;
         .col {
             margin-bottom: 6rem;
             div {
