@@ -30,6 +30,7 @@ function App() {
             <Route path="/orders" component={Dashboard} exact/>
             <Route path="/settings" component={Dashboard} exact/>
             <Route path="/help" component={Dashboard} exact/>
+            <Route path="/account" component={Dashboard} exact/>
             <Route path="/chats" component={Dashboard} exact/>
             <Route path="/logout" component={Dashboard} exact/>
           </Switch>

@@ -1,0 +1,58 @@
+#top_dashboard {
+    border-radius: 0.5rem; 
+    &.row {margin-bottom: 2rem;}
+    .col {
+        margin-bottom: 1rem;
+    } 
+
+    a {
+        display: block;
+        position: relative;
+        padding: 0.8rem 1rem;
+        background-color: #fff;
+        color: $primaryColor;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+
+        svg {
+            position: absolute;
+            font-size: 1.5rem;
+            right: 2rem;
+            bottom: 1rem;
+        }
+
+        span {
+            font-size: $smallFont;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    #total {
+        border-left: 0.4rem solid #3a86ff;
+
+        svg {
+            color: #3a86ff
+        }
+    }
+
+    #delivered {
+        border-left: 0.4rem solid #00a896;
+
+        svg {
+            color: #00a896
+        }
+    }
+    #pending {
+        border-left: 0.4rem solid #ffbe0b;
+        
+        svg {
+            color: #ffbe0b
+        }
+    }
+}

@@ -23,7 +23,6 @@ export default () => {
                             <Form.Control type={showConfirm ? "text" : "password"} placeholder="Enter new password"/>
                             <span onClick={() => changeShowConfirm(!showConfirm)}>{showConfirm ? <FiEyeOff /> : <FiEye />}</span>
                         </Form.Group>
-                        <span className="text-muted col-12">*Please provide correct information as it would be used for deliveries</span>
                         <Button>Update password</Button>
                     </Form.Row>
                 </Form>
