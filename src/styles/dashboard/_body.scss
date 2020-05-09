@@ -1,11 +1,16 @@
 #body {
     margin: 0;
-    width: 100%;
     padding: 0.1rem;
     min-height: 100vh;
     background-color: #eeeeee79;
+    padding-bottom: 2rem;
     &.fixed {
         position: fixed;
+    }
+
+    @include ipadpro {
+        margin-left: 15%;
+        width: 85%;
     }
 }
     

@@ -6,7 +6,7 @@ import {Row, Col} from "react-bootstrap"
 
 export default () => {
     return (
-        <Row id="top_dashboard" xs={1}>
+        <Row id="top_dashboard" xs={1} md={3}>
         <Col>
             <a href="dashboard" id="total">
                 <span>Placed Orders</span>

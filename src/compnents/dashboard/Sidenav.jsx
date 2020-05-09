@@ -21,7 +21,7 @@ export default ({state, action}) => {
                <li className={PATH === "/settings" ? "active" : ""}><Link to="/settings"><FiSettings /> Settings</Link></li>
                <li className={PATH === "/help" ? "active" : ""}><Link to="/help"><IoMdHelpCircleOutline /> Help</Link></li>
                <li className={PATH === "/logout" ? "active" : ""}><Link to="logout"><MdPowerSettingsNew /> Logout</Link></li>
-               <li onClick={() => action(!state)}><Link to={PATH}><IoMdClose /> Close</Link></li>
+               <li className="d-block d-lg-none" onClick={() => action(!state)}><Link to={PATH}><IoMdClose /> Close</Link></li>
            </ul>
         </div>
     )

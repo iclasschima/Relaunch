@@ -137,7 +137,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   #category {
     padding: 3rem 2rem 8rem;
   }
@@ -200,7 +200,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   #giving {
     padding: 4rem 4rem 4rem 2rem !important;
   }
@@ -313,7 +313,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   #footer svg#call {
     top: 55% !important;
   }
@@ -341,7 +341,7 @@
   margin: 0 8rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   #sponsors ul li {
     margin: 0 4rem;
   }
@@ -700,14 +700,14 @@
 
 @media screen and (max-width: 480px) {
   #how_it_works {
-    padding: 2rem 2rem 10rem;
+    padding: 2rem 2rem 0rem;
   }
   #how_it_works .row .row {
     padding: 10px 0rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   #how_it_works {
     padding: 2rem 3rem 1rem;
   }
@@ -740,7 +740,7 @@
 }
 
 #sidenav h5 {
-  line-height: 3.5rem;
+  line-height: 3rem;
   text-align: center;
   -webkit-box-shadow: #0000002e 0px 1px 0px;
           box-shadow: #0000002e 0px 1px 0px;
@@ -785,21 +785,42 @@
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 768px) {
+  #sidenav.show {
+    margin-left: 0;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #sidenav {
+    margin-left: 0;
+    width: 15%;
+  }
+}
+
 #body {
   margin: 0;
-  width: 100%;
   padding: 0.1rem;
   min-height: 100vh;
   background-color: #eeeeee79;
+  padding-bottom: 2rem;
 }
 
 #body.fixed {
   position: fixed;
 }
 
+@media screen and (min-width: 1024px) {
+  #body {
+    margin-left: 15%;
+    width: 85%;
+  }
+}
+
 #dashboard_content {
   padding: 0;
-  padding-top: 6rem;
+  padding-top: 5rem;
 }
 
 #dashboard_content .row {
@@ -861,33 +882,58 @@
   padding: 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
           box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+  height: 3rem;
+  padding-right: 1.5rem;
 }
 
 #topnav #nav_div {
-  width: 80rem;
-  padding: 0;
   height: 100%;
   margin: 0 !important;
+  color: #fff;
+  width: 3rem;
+  padding-left: 3rem;
+  font-size: 19px;
+  padding-top: 0.7rem;
+  font-size: 16px;
 }
 
-#topnav #nav_div #toggler {
-  padding: 1rem;
-  height: 4rem;
-}
-
-#topnav #nav_div #toggler p {
-  color: #fff !important;
-  text-align: center;
-  position: relative;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-#topnav #nav_div #toggler p svg {
+#topnav #nav_div svg {
   position: absolute;
-  left: 2%;
-  font-size: 26px;
-  cursor: pointer;
+  left: 5%;
+  top: 25%;
+  font-size: 1.4rem;
+}
+
+#topnav #nav_item a {
+  font-size: 16px;
+  color: #fff;
+}
+
+#topnav #nav_item a#chat {
+  margin-right: 20px;
+}
+
+#topnav #nav_item a svg {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  #topnav #nav_div {
+    padding-left: 4.5rem !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #topnav {
+    margin-left: 15%;
+    padding-right: 3.5rem;
+  }
+  #topnav #nav_div {
+    padding-top: 0.7rem;
+  }
+  #topnav #chat {
+    margin-right: 2rem !important;
+  }
 }
 
 #top_dashboard {
@@ -895,7 +941,7 @@
 }
 
 #top_dashboard.row {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #top_dashboard .col {
@@ -924,7 +970,8 @@
 }
 
 #top_dashboard a h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-top: 7px;
 }
 
 #top_dashboard a:hover {

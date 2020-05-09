@@ -53,12 +53,12 @@
     }
 
     @include mobile {
-        padding: 2rem 2rem 10rem;
+        padding: 2rem 2rem 0rem;
         .row .row {
             padding: 10px 0rem;
         }
     }
-    @include iPad {
+    @include ipad {
         padding: 2rem 3rem 1rem;
         .row .row {
             padding: 5px 0;

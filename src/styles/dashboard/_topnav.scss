@@ -2,29 +2,55 @@
     background-color: $primaryColor;
     padding: 0;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+    height: 3rem;
+    padding-right: 1.5rem;
 
     #nav_div {
-        width: 80rem;
-        padding: 0;
         height: 100%;
         margin: 0 !important;
-        #toggler {
-            padding: 1rem;
-            height: 4rem;
-            p {
-                color: #fff !important;
-                text-align: center;
-                position: relative;
-                font-size: 18px;
-                line-height: 30px;
-                svg {
-                    position: absolute;
-                    left: 2%;
-                    font-size: 26px;
-                    cursor: pointer;
-                }
+        color: #fff;
+        width: 3rem;
+        padding-left: 3rem;
+        font-size: 19px;
+        padding-top: 0.7rem;
+        font-size: $mediumFont;
+
+        svg {
+            position: absolute;
+            left: 5%;
+            top: 25%;
+            font-size: 1.4rem;
+        }
+
+    }
+
+    #nav_item {
+
+        a {
+            font-size: $mediumFont;
+            color: #fff;
+            &#chat {margin-right: 20px; }
+            svg {
+                font-size: $mediumFont;;
             }
         }
+        
+    }
+
+    @include ipad {
+        #nav_div {
+            padding-left: 4.5rem !important;
+        }
+    }
+
+    @include ipadpro {
+        margin-left: 15%;
+        padding-right: 3.5rem;
+        #nav_div  {
+            padding-top: 0.7rem;
+        }
+
+        #chat {margin-right: 2rem !important; }
     }
     
 }   

@@ -12,7 +12,7 @@
     }
 
     h5 {
-        line-height: 3.5rem;
+        line-height: 3rem;
         text-align: center;
         box-shadow: #0000002e 0px 1px 0px;
         margin-bottom: 0;
@@ -48,5 +48,17 @@
                 font-size: 1.2rem;
             }
         }
+    }
+
+    @include ipad {
+        &.show {
+            margin-left: 0;
+            width: 30%;
+        }
+    }
+
+    @include ipadpro {
+        margin-left: 0;
+        width: 15%;
     }
 }

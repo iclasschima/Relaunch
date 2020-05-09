@@ -4,13 +4,13 @@
     }
 };
 
-@mixin iPad {
-    @media screen and (max-width: 768px) {
+@mixin ipad {
+    @media screen and (min-width: 768px) {
         @content
     }
 };
 
-@mixin iPadPro {
+@mixin ipadpro {
     @media screen and (min-width: 1024px) {
         @content
     }
