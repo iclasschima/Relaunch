@@ -27,11 +27,11 @@ function App() {
             <Route path="/bvn_verification" component={BVN} />
             <Route path="/otp" component={OTP} />
             <Route path="/dashboard" component={Dashboard} exact/>
-            <Route path="/orders" component={Dashboard} exact/>
+            <Route path="/market" component={Dashboard} exact/>
             <Route path="/settings" component={Dashboard} exact/>
             <Route path="/help" component={Dashboard} exact/>
             <Route path="/account" component={Dashboard} exact/>
-            <Route path="/chats" component={Dashboard} exact/>
+            <Route path="/medicals" component={Dashboard} exact/>
             <Route path="/logout" component={Dashboard} exact/>
           </Switch>
       </BrowserRouter>

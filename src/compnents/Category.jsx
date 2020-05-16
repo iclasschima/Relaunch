@@ -6,7 +6,7 @@ import {Container, Row, Col, Button} from "react-bootstrap"
 
 export default () => (
     <Container fluid id="category" className="text-center">
-        <h4>Helping the nation fight against covid-19</h4>
+        <h5>Helping the nation fight against covid-19</h5>
         <Row md={3} xs={1}>
             <Col>
                 <div>
@@ -20,7 +20,7 @@ export default () => (
                 <div>
                     <img src={shopping} alt="shop"/>
                     <h6>Shop Online</h6>
-                    <p>Obey lockdown order. Shop online and get it right at your doorstep. No need to leave your home to prevent contraction.</p>
+                    <p>Shop online and get it right at your doorstep. No need to leave your home to prevent contraction.</p>
                     <Button>Shop now</Button>
                 </div>
             </Col>

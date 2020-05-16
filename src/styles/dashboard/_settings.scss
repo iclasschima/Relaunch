@@ -2,15 +2,20 @@
 
     #account, #contact, #password {
         background-color: #fff;
+        border-radius: 3px;
         box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
         color: $primaryColor;
         margin-bottom: 1rem;
-        padding: 1.5rem 1rem;
+        padding: 1rem;
         span {
             font-size: 0.8rem;
         }
         h5 {
             font-weight: 600;
+            font-size: $smallFont;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+            margin: 0 -16px;
+            padding: 0 20px 10px;
         }
         form {
             margin-top: 1.7rem;
@@ -19,7 +24,7 @@
                 font-size: $smallFont;
             }
             button {
-                margin-top: 1.5rem;
+                margin-top: 1.2rem;
                 color: #fff;
                 font-size: $smallFont;
                 background-color: $primaryColor;

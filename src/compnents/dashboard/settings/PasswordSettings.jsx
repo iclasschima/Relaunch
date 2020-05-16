@@ -13,17 +13,21 @@ export default () => {
                 <h5>Password Settings</h5>
                 <Form>
                     <Form.Row>
-                        <Form.Group as={Col} md={4} className="password_div">
+                        <Form.Group as={Col} lg={4} md={6} className="password_div">
                             <Form.Label>Old Password</Form.Label>
                             <Form.Control type={showPassword ? "text" : "password"} placeholder="Enter old password"/>
                             <span onClick={() => changeShowPassword(!showPassword)}>{showPassword ? <FiEyeOff /> : <FiEye />}</span>
                         </Form.Group>
-                        <Form.Group as={Col} md={4} className="password_div">
+                        <Form.Group as={Col} lg={4} md={6} className="password_div">
                             <Form.Label>New Password</Form.Label>
                             <Form.Control type={showConfirm ? "text" : "password"} placeholder="Enter new password"/>
                             <span onClick={() => changeShowConfirm(!showConfirm)}>{showConfirm ? <FiEyeOff /> : <FiEye />}</span>
                         </Form.Group>
-                        <Button>Update password</Button>
+                        <Col xs={12}>
+                        <a href="/settings">I have forgotten my password</a>
+                        </Col>
+                       
+                        <Button>Change password</Button>
                     </Form.Row>
                 </Form>
             </div>

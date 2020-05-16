@@ -1,0 +1,40 @@
+#orders_navigation {
+    padding: 0.5rem;
+    padding-left: 0;
+    border-bottom: 2px solid $borderColor;
+
+
+    a {
+        font-size: $smallFont;
+        bottom: 0 !important;
+        padding: 0 1rem;
+        padding-bottom: 0.7rem;
+        color: $primaryColor;
+        display: inline;
+        
+    }
+
+    @include ipad {
+
+        a {
+            margin-right: 2rem;
+            &:hover {
+                text-decoration: none;
+                border-bottom: 2px solid black;
+                color: black;
+            }
+        }
+    }
+
+}
+
+
+#market {
+    h5 {
+        font-size: $smallFont;
+        margin-bottom: 0.5rem;
+    }
+    select {
+        font-size: $smallFont !important;
+    }
+}

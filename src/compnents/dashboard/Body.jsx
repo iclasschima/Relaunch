@@ -6,7 +6,7 @@ import Content from "./Content"
 export default ({action, state}) => {
 
     const handleClick = () => {
-        if (state == true) {
+        if (state === true) {
             action(!state)
         }
     }

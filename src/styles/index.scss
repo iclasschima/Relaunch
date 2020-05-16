@@ -21,6 +21,7 @@
 @import "./dashboard/topnav";
 @import "./dashboard/topdashboard";
 @import "./dashboard/bottomdashboard";
+@import "./dashboard/market";
 
 * {
     margin: 0;
@@ -31,10 +32,10 @@
 
 .form-control {
     &:focus {
-        box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.18) !important;
+        box-shadow: 0 0 0 0.1rem $borderColor !important;
     }
 }
 
-h5 {
-    font-weight: 600 !important;
+ul {
+    list-style-type: none;
 }

@@ -25,21 +25,18 @@
             border-color: #fff;
         }
         @include mobile {
-            top: 30%;
+            position: relative;
+            top: 50%;
             left: 10%;
         } 
     }
 
     @include mobile {
-       padding: 8rem 3px;
+       padding: 7rem 3px;
        height: 25rem;
        .row {
            margin: 0;
        }
-        button {
-            left: 10% !important;
-            margin-top: 30px;
-        }
         h4 {
             font-size: $headerFont !important;
         }

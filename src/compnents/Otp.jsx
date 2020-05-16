@@ -9,7 +9,7 @@ export default () => {
         window.location = "/dashboard"
     }
 
-    const [state, setState] = useState("")
+    const [state, setState] = useState("00.00")
     const [time, setTime] = useState(60)
 
     const timer = time => {

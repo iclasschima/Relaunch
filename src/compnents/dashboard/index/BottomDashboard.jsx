@@ -29,19 +29,14 @@ export default () => {
                         <Col className="activity">
                             <h6>Account Update</h6>
                             <span>Donation recieved</span>
-                            <i>7 May 20</i>
+                            <i>29 Apr 20</i>
                         </Col>
                         <Col className="activity shade">
                             <h6>Items Delivery</h6>
                             <span>Delivered Successfully</span>
-                            <i>1 May 20</i>
+                            <i>24 Apr 20</i>
                         </Col>
-                        <Col className="activity">
-                            <h6>Account Update</h6>
-                            <span>Donation recieved</span>
-                            <i>7 May 20</i>
-                        </Col>
-                        <a className="col btn">
+                        <a href="/dashboard" className="col btn">
                             View more
                         </a>
                     </Row>

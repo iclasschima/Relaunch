@@ -55,6 +55,15 @@
   background-color: #fff;
 }
 
+@media screen and (max-width: 480px) {
+  #Banner #banner_text a {
+    width: 13rem;
+    height: 3.5rem;
+    padding: 0.7rem;
+    font-size: 18px;
+  }
+}
+
 #Banner #banner_text a:hover {
   background-color: #26404D;
   color: #fff;
@@ -79,22 +88,22 @@
 }
 
 #category {
-  padding: 6rem 5rem 10rem;
+  padding: 3rem 1rem 1rem;
 }
 
-#category h4 {
+#category h5 {
   margin-bottom: 60px;
-  font-size: 20px;
+  font-size: 19px;
   text-transform: capitalize;
-  font-weight: 600;
 }
 
 #category .col {
   height: 340px;
+  margin-bottom: 7rem;
 }
 
 #category .col div {
-  width: 60%;
+  width: 90%;
   height: 100%;
   margin: auto;
   font-size: 14px;
@@ -102,47 +111,51 @@
 }
 
 #category .col div img {
-  width: 60%;
-}
-
-#category .col div #savings {
-  width: 70% !important;
+  width: 47%;
 }
 
 #category .col div h6 {
   margin-top: 40px;
   font-size: 16px;
-  margin-bottom: 15px;
-  font-weight: 600;
+  margin-bottom: 0.8rem;
 }
 
 #category .col div button {
   position: absolute;
   left: 10%;
   width: 80%;
-  top: 88%;
+  top: 80%;
   color: #fff;
   background-color: #26404D;
 }
 
-@media screen and (max-width: 480px) {
-  #category {
-    padding: 3rem 1rem 1rem !important;
-  }
-  #category .col {
-    margin-bottom: 6rem;
-  }
-  #category .col div {
-    width: 80% !important;
-  }
-}
-
 @media screen and (min-width: 768px) {
   #category {
-    padding: 3rem 2rem 8rem;
+    padding: 3rem 2rem 0rem;
   }
   #category .col div {
     width: 90% !important;
+  }
+  #category .col div img {
+    width: 47%;
+  }
+  #category .col div #savings {
+    width: 56%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #category {
+    padding: 4rem 2rem 1rem;
+  }
+  #category .col div {
+    width: 90% !important;
+  }
+  #category .col div img {
+    width: 37%;
+  }
+  #category .col div #savings {
+    width: 43%;
   }
 }
 
@@ -178,22 +191,19 @@
 
 @media screen and (max-width: 480px) {
   #giving a {
-    top: 30%;
+    position: relative;
+    top: 50%;
     left: 10%;
   }
 }
 
 @media screen and (max-width: 480px) {
   #giving {
-    padding: 8rem 3px;
+    padding: 7rem 3px;
     height: 25rem;
   }
   #giving .row {
     margin: 0;
-  }
-  #giving button {
-    left: 10% !important;
-    margin-top: 30px;
   }
   #giving h4 {
     font-size: 20px !important;
@@ -250,14 +260,14 @@
 #footer ul#contact_list svg {
   position: absolute;
   left: -10px;
-  top: 10px;
+  top: 8px;
   border-color: #26404D;
   font-size: 15px;
 }
 
 #footer ul#contact_list svg#call {
   left: -10px;
-  top: 48%;
+  top: 47%;
 }
 
 #footer ul#contact_list svg#mail {
@@ -315,10 +325,10 @@
 
 @media screen and (min-width: 768px) {
   #footer svg#call {
-    top: 55% !important;
+    top: 55%;
   }
   #footer svg#mail {
-    top: 92% !important;
+    top: 92%;
   }
 }
 
@@ -584,7 +594,7 @@
 }
 
 #signup form label.form-label svg {
-  margin-right: 0.1rem;
+  margin-right: 0.2rem;
   position: relative !important;
 }
 
@@ -754,8 +764,6 @@
 
 #sidenav ul li {
   line-height: 2.3rem;
-  padding: 0.3rem;
-  padding-left: 1.5rem;
 }
 
 #sidenav ul li a {
@@ -764,6 +772,8 @@
   text-decoration: none;
   display: block;
   font-weight: 600;
+  padding: 0.3rem;
+  padding-left: 1.5rem;
 }
 
 #sidenav ul li:hover, #sidenav ul li.active {
@@ -801,7 +811,7 @@
 
 #body {
   margin: 0;
-  padding: 0.1rem;
+  padding: 0;
   min-height: 100vh;
   background-color: #eeeeee79;
   padding-bottom: 2rem;
@@ -834,11 +844,12 @@
 
 #settings #account, #settings #contact, #settings #password {
   background-color: #fff;
+  border-radius: 3px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
           box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
   color: #26404D;
   margin-bottom: 1rem;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
 }
 
 #settings #account span, #settings #contact span, #settings #password span {
@@ -847,6 +858,10 @@
 
 #settings #account h5, #settings #contact h5, #settings #password h5 {
   font-weight: 600;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  margin: 0 -16px;
+  padding: 0 20px 10px;
 }
 
 #settings #account form, #settings #contact form, #settings #password form {
@@ -859,7 +874,7 @@
 }
 
 #settings #account form button, #settings #contact form button, #settings #password form button {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   color: #fff;
   font-size: 14px;
   background-color: #26404D;
@@ -930,6 +945,7 @@
   }
   #topnav #nav_div {
     padding-top: 0.7rem;
+    padding-left: 3.5rem !important;
   }
   #topnav #chat {
     margin-right: 2rem !important;
@@ -938,18 +954,20 @@
 
 #top_dashboard {
   border-radius: 0.5rem;
+  position: relative;
 }
 
 #top_dashboard.row {
   margin-bottom: 1rem;
 }
 
-#top_dashboard .col {
+#top_dashboard .col-md-4 {
   margin-bottom: 1rem;
 }
 
-#top_dashboard a {
+#top_dashboard .col-md-4 a {
   display: block;
+  border-radius: 3px;
   position: relative;
   padding: 0.8rem 1rem;
   background-color: #fff;
@@ -958,24 +976,49 @@
           box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
 }
 
-#top_dashboard a svg {
+#top_dashboard .col-md-4 a svg {
   position: absolute;
   font-size: 1.5rem;
   right: 2rem;
   bottom: 1rem;
 }
 
-#top_dashboard a span {
+#top_dashboard .col-md-4 a span {
   font-size: 14px;
 }
 
-#top_dashboard a h1 {
+#top_dashboard .col-md-4 a h1 {
   font-size: 1.5rem;
   margin-top: 7px;
 }
 
-#top_dashboard a:hover {
+#top_dashboard .col-md-4 a:hover {
   text-decoration: none;
+}
+
+#top_dashboard #welcome_banner {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+  padding: 0.8rem 1rem;
+}
+
+#top_dashboard #welcome_banner ul {
+  font-size: 14px;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+#top_dashboard #welcome_banner ul li {
+  display: inline;
+  margin-left: 1rem;
+  line-height: 1.5rem;
+}
+
+#top_dashboard #welcome_banner ul li:first-child {
+  margin: 0;
 }
 
 #top_dashboard #total {
@@ -1011,6 +1054,9 @@
 
 #recent_activity h5 {
   padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  margin: 0;
+  font-size: 14px;
 }
 
 #recent_activity .activity {
@@ -1040,6 +1086,41 @@
   font-size: 12px;
 }
 
+#orders_navigation {
+  padding: 0.5rem;
+  padding-left: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.18);
+}
+
+#orders_navigation a {
+  font-size: 14px;
+  bottom: 0 !important;
+  padding: 0 1rem;
+  padding-bottom: 0.7rem;
+  color: #26404D;
+  display: inline;
+}
+
+@media screen and (min-width: 768px) {
+  #orders_navigation a {
+    margin-right: 2rem;
+  }
+  #orders_navigation a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    color: black;
+  }
+}
+
+#market h5 {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+#market select {
+  font-size: 14px !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1052,7 +1133,7 @@
           box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.18) !important;
 }
 
-h5 {
-  font-weight: 600 !important;
+ul {
+  list-style-type: none;
 }
 /*# sourceMappingURL=index.css.map */
